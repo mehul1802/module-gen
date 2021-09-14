@@ -6,7 +6,6 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
 var path = require('path');
-var rimraf = require('rimraf');
 var fs = require('fs-extra');
 var replace = require('replace');
 var bodyParser = require('body-parser');
@@ -26,7 +25,6 @@ app
   //GET REQUEST DRAW THE HOME PAGE
   .get(function(req, res) {
     res.render("index", {});
-    //res.redirect('https://wppb.me');
   }) // END GET ROUTE
 
   .post(function(req, res) {
