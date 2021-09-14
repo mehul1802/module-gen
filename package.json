@@ -17,7 +17,9 @@
     "github-download": "0.5.0",
     "mime": "^2.4.0",
     "replace": "^1.1.0",
-    "rimraf": "^2.4.0"
+    "rimraf": "^2.4.0",
+    "netlify-lambda": "^1.6.3",
+    "serverless-http": "^2.3.0"
   },
   "repository": {
     "type": "git",
