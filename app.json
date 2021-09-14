@@ -1,0 +1,7 @@
+{
+  "name": "module Generator",
+  "description": "Module generator",
+  "repository": "https://github.com",
+  "logo": "http://",
+  "keywords": ["node", "express", "static"]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "module-gen",
+  "version": "1.0.0",
+  "description": "Module-generator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "cron": "^1.0.9",
+    "easy-zip": "0.0.4",
+    "ejs": "^2.3.1",
+    "express": "4.16.4",
+    "fs-extra": "7.0.1",
+    "github-download": "0.5.0",
+    "mime": "^2.4.0",
+    "replace": "^1.1.0",
+    "rimraf": "^2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

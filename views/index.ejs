@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Module Generator</title>
+		<script src="js/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+	</head>
+	<body>
+
+			<div id="main">
+				<div class="box container">
+					<header>
+						<h2>Generate Module</h2>
+					</header>
+					<section>
+						<form method="POST" action="/" id="wppb-form">
+							<div class="row">
+								<div class="6u 12u(3)">
+									<label for="slug">Module Name</label>
+									<input class="text" type="text" name="slug" id="slug" value="" placeholder="module-name" data-validation="required" />
+								</div>
+								<div class="6u 12u(3)">
+									<label for="name">Module Description</label>
+									<textarea name="desc" id="desc" data-validation="required"></textarea>
+								</div>
+								
+								<div class="6u 12u(3)">
+									<input type="checkbox" id="cpost" name="cpost" value="cpost">
+									<label for="custom-post-type"> Enable Custom Post type</label><br>
+								</div>
+
+								<div class="6u 12u(3)">
+									<input type="checkbox" id="modulesetting" name="modulesetting" value="modulesetting">
+									<label for="custom-post-type"> Enable Module Setting</label><br>
+								</div>
+
+								<div class="6u 12u(3)">
+									<input type="checkbox" id="frontend" name="frontend" value="frontend">
+									<label for="frontend"> Enable Frontend</label><br>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="12u">
+									<ul class="actions">
+										<li><input type="submit" value="Build" /></li>
+										<li><input type="reset" value="Reset" class="alt" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+
+	</body>
+</html>
