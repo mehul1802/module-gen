@@ -2,9 +2,10 @@
   "name": "module-gen",
   "version": "1.0.0",
   "description": "Module-generator",
-  "main": "server.js",
+  "main": "functions/server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "netlify-lambda build express"
   },
   "dependencies": {
     "body-parser": "^1.12.4",
