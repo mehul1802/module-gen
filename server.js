@@ -4,7 +4,6 @@
 
 var express = require('express');
 var app = express();
-const serverless = require('serverless-http');
 var port = process.env.PORT || 3000;
 var path = require('path');
 var fs = require('fs-extra');
@@ -257,9 +256,3 @@ var pascalCase =  function(text) {
 app.listen(app.get('port'), function() {
   console.log('Node app is running at localhost:' + app.get('port'));
 });
-
-app.use('/.netlify/functions/server', router);  // path must route to lambda
-app.use('/', (req, res) => res.sendFile(path.join(__dirname, '../index.html')));
-
-module.exports = app;
-module.exports.handler = serverless(app);
