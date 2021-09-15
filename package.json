@@ -5,7 +5,7 @@
   "main": "functions/server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "netlify-lambda build express"
+    "build": "netlify-lambda build"
   },
   "dependencies": {
     "body-parser": "^1.12.4",
